@@ -317,7 +317,7 @@ CGFloat const STPopupPreviewShowActionsOffset = 30;
             _popupController.transitionStyle = STPopupTransitionStyleFade;
             _popupController.hidesCloseButton = YES;
             if (NSClassFromString(@"UIVisualEffectView")) {
-                UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+                UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
                 _popupController.backgroundView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
             }
             else { // Work around for iOS 7
